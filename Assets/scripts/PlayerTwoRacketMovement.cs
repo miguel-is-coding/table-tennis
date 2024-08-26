@@ -3,12 +3,13 @@ using UnityEngine;
 public class PlayerTwoRacketMovement : MonoBehaviour
 {
     public float speed = 5.0f;
+    public string playerAxis = "VerticalArrowKeys";
     
-
     // Update is called once per frame
     void Update()
     {
-        float verticalInput = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.up * (verticalInput * speed * Time.deltaTime));
+        var direction = Input.GetAxis(playerAxis);
+        var moveSpeed = speed * Time.deltaTime;
+        transform.Translate(Vector3.up * (direction * moveSpeed));
     }
 }
