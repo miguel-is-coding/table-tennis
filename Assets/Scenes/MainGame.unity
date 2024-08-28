@@ -482,9 +482,9 @@ GameObject:
   m_Component:
   - component: {fileID: 791057039}
   - component: {fileID: 791057038}
-  - component: {fileID: 791057040}
   - component: {fileID: 791057041}
   - component: {fileID: 791057042}
+  - component: {fileID: 791057043}
   m_Layer: 0
   m_Name: playerTwoRacket
   m_TagString: Untagged
@@ -559,20 +559,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &791057040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 791057037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a9ae871f193e9849907d0d206ea4a8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  playerAxis: VerticalArrowKeys
 --- !u!61 &791057041
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -645,6 +631,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &791057043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791057037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9becb4dc39d8198429b5de3adeb5f024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  playerAxis: VerticalArrowKeys
 --- !u!1 &913712970
 GameObject:
   m_ObjectHideFlags: 0
